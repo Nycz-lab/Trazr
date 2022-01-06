@@ -36,6 +36,10 @@
     (Every time you close dev tools)
     Keep dev tools open -> use omegle video chat -> see magic happen 🧙‍♂️
 
+    You can also close the console after inserting the code Trazr will 
+    log the information to the omegle chat as well however keep in mind
+    that this will not show the history
+
 ![screen-gif](https://i.imgur.com/708A35f.gif)
 
 ## Conclusion ⚠

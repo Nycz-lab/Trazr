@@ -5,6 +5,16 @@
 
 let currentConnection = null;
 
+let chatbox = null;
+
+let TrazrContainer = document.createElement('div');
+TrazrContainer.classList.add('statuslog');
+TrazrContainer.style.color = 'orange';
+TrazrContainer.style.backgroundColor = '#333333';
+
+let TrazrMsg = document.createElement('p');
+TrazrMsg.style.textAlign = 'center';
+
 const Ascii = `
   ▄▄▄█████▓ ██▀███   ▄▄▄     ▒███████▒ ██▀███  
   ▓  ██▒ ▓▒▓██ ▒ ██▒▒████▄   ▒ ▒ ▒ ▄▀░▓██ ▒ ██▒
@@ -15,6 +25,7 @@ const Ascii = `
       ░      ░▒ ░ ▒ ░ ░   ▒▒  ░▒ ▒ ░ ▒  ░▒ ░ ▒ 
     ░ ░      ░░   ░   ░   ▒  ░ ░ ░ ░ ░  ░░   ░ 
               ░           ░    ░ ░       ░     `
+
 
 window.oRTCPeerConnection =
   window.oRTCPeerConnection || window.RTCPeerConnection;
@@ -37,7 +48,16 @@ window.RTCPeerConnection = function (...args) {
   return pc;
 };
 
+let logToChat = (output) => {
+  chatbox = document.getElementsByClassName("logbox")[0].children[0]
 
+  TrazrMsg.innerText = output
+
+  TrazrContainer.innerHTML = ""
+
+  TrazrContainer.appendChild(TrazrMsg)
+  chatbox.appendChild(TrazrContainer)
+}
 
 let getLocation = async (ip) => {
   let url = `https://geoip.razex.de/api/${ip}`;
@@ -68,8 +88,8 @@ let getLocation = async (ip) => {
 
           ---------------------
           `;
-      //console.log(output);
       console.log(`%c${output}`, "color: orange")
+      logToChat(output)
     })
   );
 };
