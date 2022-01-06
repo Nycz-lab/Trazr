@@ -1,6 +1,8 @@
 # Trazr 🕵️‍♂️
     Osint Omegle Ip and geolocation tool 
 
+![screen-gif](https://i.imgur.com/hqiBzLI.png)
+
 ### Description ℹ
     This small javascript application monitors omegle connections and
     returns their information in the console. This showcases how
