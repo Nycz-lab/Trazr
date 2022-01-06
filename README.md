@@ -41,4 +41,4 @@
 
     cheers
 
-![screen-gif](./install.gif)
+![screen-gif](https://i.imgur.com/708A35f.gif)
