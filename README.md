@@ -15,7 +15,7 @@
     code into your browsers javascript console while being on the omegle
     page. Also dont paste code you dont understand into your console
 
-    ![screen-gif](https://i.imgur.com/708A35f.gif)
+    [screen-gif](https://i.imgur.com/708A35f.gif)
 
     Step 0:
         Navigate to Omegle lol
