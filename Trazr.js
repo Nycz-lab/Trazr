@@ -12,6 +12,9 @@ TrazrContainer.classList.add('statuslog');
 TrazrContainer.style.color = 'orange';
 TrazrContainer.style.backgroundColor = '#333333';
 
+let pre = document.createElement('pre');
+
+
 let TrazrMsg = document.createElement('p');
 TrazrMsg.style.textAlign = 'center';
 
@@ -53,9 +56,10 @@ let logToChat = (output) => {
 
   TrazrMsg.innerText = output
 
-  TrazrContainer.innerHTML = ""
+  pre.innerHTML = ""
 
-  TrazrContainer.appendChild(TrazrMsg)
+  pre.appendChild(TrazrMsg);
+  TrazrContainer.appendChild(pre)
   chatbox.appendChild(TrazrContainer)
 }
 
