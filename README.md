@@ -15,6 +15,8 @@
     code into your browsers javascript console while being on the omegle
     page. Also dont paste code you dont understand into your console
 
+    ![screen-gif](https://i.imgur.com/708A35f.gif)
+
     Step 0:
         Navigate to Omegle lol
 
@@ -35,4 +37,6 @@
     Keep dev tools open -> use omegle video chat -> see magic happen 🧙‍♂️
 
 ## Conclusion ⚠
-    Dont use Omegle since its insecure... spread the word
+    Dont use Omegle since its insecure 🔑... spread the word
+
+    cheers
