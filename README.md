@@ -36,9 +36,10 @@
     (Every time you close dev tools)
     Keep dev tools open -> use omegle video chat -> see magic happen 🧙‍♂️
 
+![screen-gif](https://i.imgur.com/708A35f.gif)
+
 ## Conclusion ⚠
     Dont use Omegle since its insecure 🔑... spread the word
 
     cheers
 
-![screen-gif](https://i.imgur.com/708A35f.gif)
