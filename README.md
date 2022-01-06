@@ -15,7 +15,7 @@
     code into your browsers javascript console while being on the omegle
     page. Also dont paste code you dont understand into your console
 
-    ![screen-gif](./install.gif)
+    
 
     Step 0:
         Navigate to Omegle lol
@@ -40,3 +40,5 @@
     Dont use Omegle since its insecure 🔑... spread the word
 
     cheers
+
+![screen-gif](./install.gif)
