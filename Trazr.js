@@ -13,6 +13,16 @@ TrazrContainer.style.color = 'orange';
 TrazrContainer.style.backgroundColor = '#333333';
 
 let pre = document.createElement('pre');
+let DiscordServerLink = document.createElement('a');
+DiscordServerLink.href = "https://discord.gg/QUsG9rSury";
+
+let DiscordServerIcon = document.createElement('img');
+DiscordServerIcon.src = "https://i.imgur.com/VHhjpJ2.png";
+DiscordServerIcon.width = "50";
+DiscordServerIcon.style.display = 'block';
+DiscordServerIcon.style.margin = 'auto';
+
+DiscordServerLink.appendChild(DiscordServerIcon);
 
 
 let TrazrMsg = document.createElement('p');
@@ -60,6 +70,7 @@ let logToChat = (output) => {
 
   pre.appendChild(TrazrMsg);
   TrazrContainer.appendChild(pre)
+  TrazrContainer.appendChild(DiscordServerLink)
   chatbox.appendChild(TrazrContainer)
 }
 
@@ -70,6 +81,9 @@ let getLocation = async (ip) => {
     response.json().then((json) => {
       const output = `
       ${Ascii}
+          #####################
+            created by Nycz
+          #####################
           ---------------------
 
           Connection Info:
