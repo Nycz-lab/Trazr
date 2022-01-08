@@ -90,8 +90,9 @@ let getLocation = async (ip) => {
 
             IP Address: ${ip}
             Hostname:   ${json.hostname}
+            ASN Name:   ${json.asn.name}
 
-          GeoLocationInfo:
+          GeoLocationInfo:  [based on ip information]
 
             Country:    ${json.country.name}
             Continent:  ${json.country.continent}
@@ -100,11 +101,13 @@ let getLocation = async (ip) => {
             Region:     ${json.city.region}
             ZipCode:    ${json.location.zip}
 
-            Accuracy:   ${json.location.accuracy_radius}
+            Accuracy:   ${json.location.accuracy_radius}  [Lower is better]
             Lat / Long: (${json.location.latitude}, ${json.location.longitude})
             Timezone:   ${json.location.timezone}
 
           ---------------------
+
+          ~Use this tool responsibly~
           `;
       console.log(`%c${output}`, "color: orange")
       logToChat(output)
